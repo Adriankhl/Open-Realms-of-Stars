@@ -30,7 +30,7 @@ public enum GoodRandomType {
   MYSTERIOUS_SIGNAL,
   /**
    * Climate changes on planet to provide more food.
-   * DESERT->ARID->None->Lush Vegatation->Paradise
+   * DESERT -- ARID -- None -- Lush Vegetation -- Paradise
    */
   CLIMATE_CHANGE,
   /**

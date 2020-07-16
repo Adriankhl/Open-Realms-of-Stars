@@ -86,7 +86,6 @@ public abstract class Event {
    * Next bytes contains the actual data. Length contains also length itself
    * and type byte.
    * @return Byte array of event
-   * @throws IOException if reading fails.
    */
   public abstract byte[] createByteArray();
 

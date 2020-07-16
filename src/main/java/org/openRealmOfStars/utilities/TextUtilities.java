@@ -35,7 +35,7 @@ public final class TextUtilities {
    * Get integer as ordering text
    * @param number Integer to convert ordering text
    * @return Ordering text
-   * @throws IllegalArgument if integer is below one
+   * @throws IllegalArgumentException if integer is below one
    */
   public static String getOrderNumberAsText(final int number) {
     if (number < 1) {
