@@ -2203,7 +2203,11 @@ public class Game implements ActionListener {
         configFile.setSoundVolume(optionsView.getSoundVolume());
         configFile.setBorderless(optionsView.getBorderless());
         configFile.setLargerFonts(optionsView.getLargerFonts());
-        configFile.setResolution(gameFrame.getWidth(), gameFrame.getHeight());
+
+        int width = gameFrame.getContentPane().getWidth();
+        int height = gameFrame.getContentPane().getHeight();
+        configFile.setResolution(width, height);
+
         GuiStatics.setLargerFonts(configFile.getLargerFonts());
         writeConfigFile();
         changeGameState(GameState.MAIN_MENU);
@@ -2219,7 +2223,11 @@ public class Game implements ActionListener {
         configFile.setSoundVolume(optionsView.getSoundVolume());
         configFile.setBorderless(optionsView.getBorderless());
         configFile.setLargerFonts(optionsView.getLargerFonts());
-        configFile.setResolution(gameFrame.getWidth(), gameFrame.getHeight());
+
+        int width = gameFrame.getContentPane().getWidth();
+        int height = gameFrame.getContentPane().getHeight();
+        configFile.setResolution(width, height);
+
         GuiStatics.setLargerFonts(configFile.getLargerFonts());
         return;
       }
